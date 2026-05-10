@@ -1,0 +1,84 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.portal-page-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  min-height: calc(100vh - 120px);
+}
+
+/* 面包屑与首屏标题区留白一致 */
+.portal-page-crumb {
+  margin-bottom: 8px;
+}
+
+/* §2.4：正文辅说明（紧随 H2 之下）；与 H2 间距略收紧，与正文区保持 16px */
+.portal-page-sub {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* §2.4 页面主标题 = H2（24 / 32 / 600） */
+.portal-page-title.ant-typography,
+.portal-page-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.portal-page-card .portal-page-title.ant-typography {
+  margin-top: 0;
+}
+
+/* H2 后紧跟副标题时：标题与副标题 8px，副标题后再留 16px（由 .portal-page-sub margin-bottom） */
+.portal-page-title.ant-typography:has(+ .portal-page-sub) {
+  margin-bottom: 8px;
+}
+
+.portal-heading-h3.ant-typography,
+.portal-heading-h3 {
+  margin: 24px 0 12px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.portal-heading-h3.ant-typography:first-child,
+.portal-heading-h3:first-child {
+  margin-top: 0;
+}
+
+.portal-heading-h4.ant-typography,
+.portal-heading-h4 {
+  margin: 16px 0 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.portal-heading-h5.ant-typography,
+.portal-heading-h5 {
+  margin: 12px 0 8px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.portal-body-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.88);
+}
