@@ -232,7 +232,7 @@ function fmtMoney(v: number) {
                   :gap-degree="75"
                   :width="90"
                   stroke-color="#4096ff"
-                  :format="(p) => p + '%'"
+                  :format="(p: number) => p + '%'"
                 />
                 <div class="ov-ring-label">成功率</div>
               </div>
@@ -243,7 +243,7 @@ function fmtMoney(v: number) {
                   :gap-degree="75"
                   :width="90"
                   stroke-color="#ff7875"
-                  :format="(p) => p + '%'"
+                  :format="(p: number) => p + '%'"
                 />
                 <div class="ov-ring-label">失败率</div>
               </div>
@@ -254,7 +254,7 @@ function fmtMoney(v: number) {
                   :gap-degree="75"
                   :width="90"
                   stroke-color="#d9d9d9"
-                  :format="(p) => p + '%'"
+                  :format="(p: number) => p + '%'"
                 />
                 <div class="ov-ring-label">退款率</div>
               </div>
